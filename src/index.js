@@ -1,1 +1,3 @@
-console.log('hello')
+import './style.css'
+
+element.classList.add('hello');
