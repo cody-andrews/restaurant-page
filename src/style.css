@@ -23,6 +23,12 @@ body {
     transition-duration: 0.4s;
   }
 
+  .active {
+    background-color: red; /* Green */
+    color: white;
+    
+  }
+
 
   
   .button-nav:hover {
