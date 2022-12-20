@@ -1,3 +1,5 @@
+import initWebsite from './pages/website'
 import './style.css'
 
-element.classList.add('hello');
+initWebsite();
+
