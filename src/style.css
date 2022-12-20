@@ -1,3 +1,32 @@
-/* body {
-    background-color: black;
-  } */
+body {
+    /* background-color: black; */
+  color: red;
+  }
+
+  h1  {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav{
+    display: flex;
+    column-gap: 20px;  /* Set a gap of 20px */
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .button-nav  {
+
+    color: red;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 10px 24px;
+    transition-duration: 0.4s;
+  }
+
+
+  
+  .button-nav:hover {
+    background-color: red; /* Green */
+    color: white;
+    
+  }
