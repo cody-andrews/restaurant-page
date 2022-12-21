@@ -62,13 +62,34 @@ function setActiveButton(button)    {
         button.classList.add('active')
     }
 
+    function createFooter()  {
+        const footer = document.createElement('footer');
+        footer.classList.add('footer');
+
+        const copyright = document.createElement("p");
+        copyright.textContent = `Copyright © ${new Date().getFullYear()} Cody Andrews`;
+
+        const githubLink = document.createElement('a');
+        githubLink.href ='https://github.com/cody-andrews';
+
+        const githubIcon = document.createElement('i');
+        githubIcon.classList.add('fab');
+        githubIcon.classList.add('fa-github');
+
+        githubLink.appendChild(githubIcon);
+        footer.appendChild(copyright);
+        footer.appendChild(githubLink);
+
+        return footer;
+
+    }
 
 function initWebsite() {
 
     const content = document.getElementById('content');
 
     content.appendChild(createHeader());
-    content.appendChild(createMain());
+    // content.appendChild(createMain());
     content.appendChild(createFooter());
 
 }

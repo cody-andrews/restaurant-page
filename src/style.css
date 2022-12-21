@@ -29,10 +29,27 @@ body {
     
   }
 
-
   
   .button-nav:hover {
     background-color: red; /* Green */
     color: white;
     
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  
+
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
   }
