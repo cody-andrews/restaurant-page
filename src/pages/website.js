@@ -1,3 +1,5 @@
+import loadContact from "./contact";
+
 
 function createHeader(){
     const header = document.createElement('header');
@@ -62,6 +64,13 @@ function setActiveButton(button)    {
         button.classList.add('active')
     }
 
+    function createMain()   {
+        const main = document.createElement('main');
+        main.classList.add('main');
+        main.setAttribute('id', 'main');
+        return main;
+    }
+
     function createFooter()  {
         const footer = document.createElement('footer');
         footer.classList.add('footer');
@@ -89,7 +98,7 @@ function initWebsite() {
     const content = document.getElementById('content');
 
     content.appendChild(createHeader());
-    // content.appendChild(createMain());
+    content.appendChild(createMain());
     content.appendChild(createFooter());
 
 }
